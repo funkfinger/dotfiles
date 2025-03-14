@@ -1,2 +1,6 @@
+# aliases...
+alias ll="ls -lah  --color=auto"
 # prompt...
-PROMPT="%t - %n@%m>"
+autoload -U colors && colors
+PROMPT="%n@%m>"
+RPROMPT="%{$fg[green]%}%t%{$reset_color%}"
